@@ -1,4 +1,5 @@
 import { AuthProvider, useAuth } from '@/hooks/useAuth';
+import { MaestroProcessesDashboard } from '@/components/MaestroProcessesDashboard';
 
 function SignInGate() {
   const { isAuthenticated, isLoading, login, error } = useAuth();
@@ -27,14 +28,7 @@ function SignInGate() {
     );
   }
 
-  return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-2xl font-semibold">UiPath Coded Web App</h1>
-      <p className="mt-2 text-sm text-gray-600">
-        Replace this placeholder with your application UI.
-      </p>
-    </main>
-  );
+  return <MaestroProcessesDashboard />;
 }
 
 export function App() {
