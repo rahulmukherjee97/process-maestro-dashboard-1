@@ -1,5 +1,5 @@
 {
-  "name": "maestro-process-moni-u2kpk82fp5rsttapp7-5-",
+  "name": "uipath-dashboard",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +7,12 @@
     "dev": "vite --host 0.0.0.0 --port ${PORT:-3000}",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port ${PORT:-4173}",
-    "lint": "eslint --cache -f json --quiet .",
-    "prepare": "bun .bootstrap.js || true"
+    "lint": "eslint --cache -f json --quiet ."
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.62.0",
     "@uipath/uipath-typescript": "latest",
+    "lucide-react": "^0.468.0",
     "path-browserify": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
